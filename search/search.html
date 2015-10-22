@@ -7,11 +7,11 @@
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Слово или фраза</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Введите текст для поиска">
+                    <input type="email" class="form-control" id="stext" placeholder="Введите текст для поиска">
                 </div>
                 <button type="submit" class="btn btn-default">Погнали :)</button>
-                <button type="submit" class="btn btn-default">Yandex ^_^</button>
-                <button type="submit" class="btn btn-default">Google :3</button>
+                <button type="submit" class="btn btn-default" onclick="window.location.assign('http://yandex.ru/search/?lr=213&text=dsfsd' + (document.getElementById('stext').value));">Искать слово в яндексе ^_^</button>
+                <button type="submit" class="btn btn-default" onclick="window.location.assign('https://www.google.ru/#newwindow=1&q=' + (document.getElementById('stext').value));">Искать слово в Google :3</button>
             </form>
         </div><!--/row-->
     </div><!--/.col-xs-12.col-sm-9-->
