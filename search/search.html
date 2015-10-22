@@ -4,15 +4,30 @@
 
     <div class="col-xs-12 col-sm-9">
         <div class="row">
-            <form>
+            <form target="_blank" action="http://search-beta.ruscorpora.ru/search.xml" name="exactForm" method="get">
+                <input type="hidden" name="env" value="alpha">
+                <input type="hidden" name="mycorp" value="">
+                <input type="hidden" name="mysent" value="">
+                <input type="hidden" name="mysize" value="">
+                <input type="hidden" name="mysentsize" value="">
+                <input type="hidden" name="mydocsize" value="">
+                <input type="hidden" name="dpp" value="">
+                <input type="hidden" name="spp" value="">
+                <input type="hidden" name="spd" value="">
+                <input type="hidden" name="text" value="lexform">
+                <input type="hidden" name="mode" value="main">
+                <input type="hidden" name="sort" value="gr_tagging">
+                <input type="hidden" name="lang" value="ru">
+                <input type="hidden" name="nodia" value="1">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Слово или фраза</label>
-                    <input type="email" class="form-control" id="stext" placeholder="Введите текст для поиска">
+                    <label for="req">Слово или фраза</label>
+                    <input type="text" class="form-control" id="req" placeholder="Введите текст для поиска">
                 </div>
-                <button type="submit" class="btn btn-default">Погнали :)</button>
-                <button type="submit" class="btn btn-default" onclick="window.location.assign('http://yandex.ru/search/?lr=213&text=dsfsd' + (document.getElementById('stext').value));">Искать слово в яндексе ^_^</button>
-                <button type="submit" class="btn btn-default" onclick="window.location.assign('https://www.google.ru/#newwindow=1&q=' + (document.getElementById('stext').value));">Искать слово в Google :3</button>
+                <button type="submit" class="btn btn-default" type="submit">Погнали :)</button>
+                <button type="submit" class="btn btn-default" onclick="window.location.assign('http://yandex.ru/search/?lr=213&text=dsfsd' + (document.getElementById('req').value)); return false;">Искать слово в яндексе ^_^</button>
+                <button type="submit" class="btn btn-default" onclick="window.location.assign('https://www.google.ru/#newwindow=1&q=' + (document.getElementById('req').value)); return false;">Искать слово в Google :3</button>
             </form>
+
         </div><!--/row-->
     </div><!--/.col-xs-12.col-sm-9-->
 
